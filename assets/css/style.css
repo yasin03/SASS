@@ -1,0 +1,117 @@
+body {
+  padding: 0;
+  margin: 2rem;
+  background-color: rgb(179, 186, 211);
+  font-family: Poppins;
+}
+
+.card {
+  background-color: rgb(48, 48, 48);
+  border-radius: 20px;
+  color: rgb(233, 232, 232);
+  display: flex;
+  width: 600px;
+}
+.card .left {
+  background-image: url("../img/bg.jpg");
+  flex: 2;
+  background-size: cover;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10rem;
+  position: relative;
+}
+.card .left > .top > .day {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card .left > .bottom {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card .left > .bottom > .weather {
+  font-size: 1rem;
+}
+.card .left .top,
+.card .left .bottom {
+  z-index: 1;
+}
+.card .left::before {
+  content: "";
+  background-color: rgba(255, 0, 195, 0.452);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px 0 0 20px;
+}
+.card > .right {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 0;
+}
+.card > .right > .status,
+.card > .right > .days {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.card > .right > .status li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  line-height: 2rem;
+}
+.card > .right > .status li span:first-child {
+  font-weight: 600;
+}
+.card > .right .days {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.card > .right .days > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+.card > .right .days > li span:nth-child(1) {
+  font-size: 2rem;
+}
+.card > .right .days > li span:nth-child(3) {
+  font-weight: 700;
+}
+.card > .right .days .active {
+  background-color: rgb(233, 232, 232);
+  color: rgb(48, 48, 48);
+}
+.card > .left,
+.card > .right {
+  padding: 1.5rem;
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(90deg, rgb(233, 232, 232), rgba(255, 0, 195, 0.452));
+}
+
+button:hover {
+  background-image: linear-gradient(90deg, rgba(255, 0, 195, 0.452), rgb(233, 232, 232));
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
